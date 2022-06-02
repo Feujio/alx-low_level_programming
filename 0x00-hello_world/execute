@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cp ../starter_code $1
+cp ../starter_code $1
 #sleep 2
 
 ls -l
