@@ -3,12 +3,12 @@
 cp ../starter_code $1
 #sleep 2
 
-ls -l
+ls -l --color
 sleep 5
 
 emacs
 
-ls -l
+ls -l --color
 sleep 5
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $1
