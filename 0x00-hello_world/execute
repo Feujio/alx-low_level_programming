@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#cp ../starter_code $1
+#sleep 2
+
+ls -l
+sleep 5
+
+emacs
+
+ls -l
+sleep 5
+
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 $1
+sleep 5
+
+# run Betty linter
+betty $1

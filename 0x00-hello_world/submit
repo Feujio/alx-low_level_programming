@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git status
+sleep 5
+git add $1 $2
+sleep 5
+git status
+sleep 5
+git commit
+sleep 5
+git push
