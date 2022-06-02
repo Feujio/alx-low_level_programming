@@ -1,0 +1,13 @@
+# Exclude Betty directory
+../Betty
+
+# Set my system to the requirements standards
+## Exclude personal files for avoiding repetitive command typing
+*/execute
+*/submit
+## Starter code file contains the shebang only
+starter_code
+
+# Task 0 test files
+*_world/c
+*_world/main.c
