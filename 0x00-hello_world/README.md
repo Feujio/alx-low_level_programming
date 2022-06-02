@@ -16,6 +16,12 @@ In this project, I will explore the basics of C programming
 * 3-name: compiles a C file and creates an executable named `cisfun`
 * 4-puts.c: prints exactly `"Programming is like building a multilingual puzzle` followed by a new line
   * Use the function `puts`
+* 5-printf.c: Prints exactly `with proper grammar, but the outcome is a piece of art`, followed by a new line.
+  * Use the function `printf`
+  * Not allowed to use the function `puts`
+  * Program should return `0`
+  * program should compile without warning when using the `-Wall` gcc option
+
 ## License
 
 None.
