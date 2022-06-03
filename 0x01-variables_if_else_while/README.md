@@ -8,6 +8,7 @@ In this project, I will explore variables and control structures (if, else, whil
 * 1-last_digit.c: print the last digit of the number stored in the variable `n`
 * 2-print_alphabet.c: prints the alphabet in lowercase, followed by a new line using `putchar` function
 * 3-print_alphabets.c: prints the alphabet in lowercase, and then in uppercase, followed by a new line
+* 4-print_alphabet.c: prints the alphabet in lowercase, followed by a new line. Print all except `q` and `e`
 
 ## License
 
