@@ -27,6 +27,7 @@ In this project, I will explore the basics of C programming
 * 100-intel: generates the assembly code (intel syntax) of a C code and save it in an output file
   * The C file name will be saved in the variable `$CFILE`
   * The output file should be named the same as the C file, but with the extension `.s` instead of `.c`
+* 101-quote.c: prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.`
 
 ## License
 
