@@ -21,6 +21,9 @@ In this project, I will explore the basics of C programming
   * Not allowed to use the function `puts`
   * Program should return `0`
   * program should compile without warning when using the `-Wall` gcc option
+* 6-size.c: prints the size of various types on the computer it is compiled and run on
+  * Warnings are allowed
+  * program should return `0`
 
 ## License
 
