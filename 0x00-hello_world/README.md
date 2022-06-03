@@ -24,6 +24,9 @@ In this project, I will explore the basics of C programming
 * 6-size.c: prints the size of various types on the computer it is compiled and run on
   * Warnings are allowed
   * program should return `0`
+* 100-intel: generates the assembly code (intel syntax) of a C code and save it in an output file
+  * The C file name will be saved in the variable `$CFILE`
+  * The output file should be named the same as the C file, but with the extension `.s` instead of `.c`
 
 ## License
 
