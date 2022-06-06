@@ -14,6 +14,7 @@ In this project, I will explore variables and control structures (if, else, whil
 * `7-print_tebahpla.c`: prints the lowercase alphabet in reverse, followed by a new line. only use the function `putchar`
 * `8-print_base16.c`: prints all the numbers of base 16 in lowercase, followed by a new line. Use only the function `putchar`
 * `9-print_comb.c`: prints all possible combinations of single-digit numbers
+* `100-print_comb3.c`: prints all possible combinations of two digits
 
 ## License
 
