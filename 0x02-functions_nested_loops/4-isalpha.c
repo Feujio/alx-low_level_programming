@@ -1,5 +1,6 @@
 #include "main.h"
 
+int _islower(int c);
 int _isupper(int c);
 
 /**
@@ -12,6 +13,17 @@ int _isupper(int c);
 int _isalpha(int c)
 {
 	return ((_islower(c) || _isupper(c)) ? 1 : 0);
+}
+
+/**
+ * _islower - checks for lowercase character
+ * @c: The charcater to check
+ *
+ * Return: 1 if @c is uppercase. 0 otherwise.
+ */
+int _islower(int c)
+{
+	return ((c >= 97 && c <= 122) ? 1 : 0);
 }
 
 /**
