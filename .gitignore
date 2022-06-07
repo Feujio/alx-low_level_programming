@@ -11,3 +11,8 @@ starter_code
 # Task 0 test files
 *_world/c
 *_world/main.c
+
+# Exclude files from project 0x02-functions_nested_loops
+./0x02-functions*/_putchar.c
+## Exclude testing files
+./0x02-functions*/[0-9]*-main.c
