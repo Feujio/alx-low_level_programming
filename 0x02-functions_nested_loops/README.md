@@ -9,7 +9,10 @@ In this project, I will explore functions and nested loops.
 * `2-print_alphabet_x10.c`: prints 10 times the alphabet, in lowercase, followed by a new line
 * `3-islower.c`: checks for lowercase character:
   * Returns `1` if the input is a character
-  * Retunrs `0` otherwise
+  * Returns `0` otherwise
+* `4-isalpha.c`: checks for alphabetic character:
+  * Returns `1` if the input is a letter; lowercase or uppercase
+  * Returns `0` otherwise
   
 ## License
 
