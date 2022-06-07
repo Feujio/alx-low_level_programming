@@ -18,6 +18,7 @@ In this project, I will explore functions and nested loops.
   * Returns `0` and prints `0` if `n` is zero
   * Returns `-1` and prints `-` if `n` is less than zero
 * `6-abs.c`: computes tha absolute value of an integer
+* `7-print_last_digit.c`: prints the last digit of a number and also returns it.
 
 ## License
 
