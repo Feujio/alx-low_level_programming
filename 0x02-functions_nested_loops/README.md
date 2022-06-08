@@ -29,7 +29,8 @@ In this project, I will explore functions and nested loops.
   * The last printed number is  98
 * `100-times_table.c`: prints the `n` times table, starting with 0
 * `101-natural.c`: computes and prints the sum of all the multiples of `3` or `5` below `1024`
-
+* `102-fibonacci.c`: prints the first 50 Fibonacci numbers, starting with 1 and 2, followed by a new line
+* `104-fibonacci.c`: finds and prints the first 98 Fibonacci numbers, starting with 1 and 2, followed ny a new line
 ## License
 
 None.
