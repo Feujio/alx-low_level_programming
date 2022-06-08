@@ -27,7 +27,8 @@ In this project, I will explore functions and nested loops.
   * Numbers are printed in order
   * The first printed number is the number passed to your function
   * The last printed number is  98
-  
+* `100-times_table.c`: prints the `n` times table, starting with 0
+
 ## License
 
 None.
