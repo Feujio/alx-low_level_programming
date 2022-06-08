@@ -22,7 +22,12 @@ In this project, I will explore functions and nested loops.
 * `8-24_hours.c`: prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59
 * `9-times_table.c`: prints the 9 times table, starting with 0
 * `10-add.c`: add two integers and returns the result
-
+* `11-print_to_98.c`: prints all numbers from `n` to `98`, followed by a new line
+  * Numbers are separated by a comma, followed by a space
+  * Numbers are printed in order
+  * The first printed number is the number passed to your function
+  * The last printed number is  98
+  
 ## License
 
 None.
