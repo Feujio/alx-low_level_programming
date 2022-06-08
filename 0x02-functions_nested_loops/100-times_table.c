@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
+void print_digit_by_digit(int x, int y, int z, int t);
+
 /**
  * print_times_table - prints the @n times table, starting with 0
  * @n: integer
@@ -9,7 +11,8 @@
  */
 void print_times_table(int n)
 {
-	int i, j, x, first_digit_x, last_digit_x;
+	int i, j, x;
+		/*, first_digit_x, last_digit_x;*/
 
 	if (n == 0)
 	{
@@ -26,10 +29,7 @@ void print_times_table(int n)
 			{
 				if (i == 0)
 				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0');
+					print_digit_by_digit(' ', ' ', ' ', 0);
 					if (j == n)
 						continue;
 					_putchar(',');
@@ -37,23 +37,11 @@ void print_times_table(int n)
 				{
 					x = i * j;
 					if (x < 100)
-					{
-						_putchar(' ');
-						_putchar(' ');
-						last_digit_x = x % 10;
-						first_digit_x = x / 10;
-						if (!first_digit_x)
-							_putchar(' ');
-						else
-							_putchar(first_digit_x + '0');
-						_putchar(last_digit_x + '0');
-					} else
-					{
-						_putchar(' ');
-						_putchar((x / 100) + '0');
-						_putchar(((x / 10) % 10) + '0');
-						_putchar((x % 10) + '0');
-					}
+						print_digit_by_digit(' ', ' ', (!(x / 10) ? ' ' : (x / 10)), x % 10);
+					else if (x >= 100 && x < 1000)
+						print_digit_by_digit(' ', (x / 100), ((x / 10) % 10), x % 10);
+					else
+						print_digit_by_digit((x / 1000), (x / 100) % 10, (x / 10) % 10, x % 10);
 					if (j == n)
 						continue;
 					_putchar(',');
@@ -63,3 +51,30 @@ void print_times_table(int n)
 		}
 	}
 }
+
+/**
+ * print_digit_by_digit - prints digit by digit a given number
+ * @x: integer, the first single character digit to be print
+ * @y: integer, the second digit or ' ' character
+ * @z: integer, the third digit or ' ' character
+ * @t: integer, the last character
+ *
+ * Return: Nothing
+ */
+void print_digit_by_digit(int x, int y, int z, int t)
+{
+	if (x == ' ')
+		_putchar(' ');
+	else
+		_putchar(x + '0');
+	if (y == ' ')
+		_putchar(' ');
+	else
+		_putchar(y + '0');
+	if (z == ' ')
+		_putchar(' ');
+	else
+		_putchar(z + '0');
+	_putchar(t + '0');
+}
+
