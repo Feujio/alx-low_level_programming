@@ -12,13 +12,13 @@ int main(void)
 
 	printf("%.0Lf, ", f_n_2);
 	printf("%.0Lf, ", f_n_1);
-	for (i = 3; i < 92; i++)
+	for (i = 3; i < 99; i++)
 	{
 		f_n = f_n_1 + f_n_2;
 		printf("%.0Lf", f_n);
 		f_n_2 = f_n_1;
 		f_n_1 = f_n;
-		if (i == 92)
+		if (i == 98)
 			break;
 		printf(", ");
 	}
