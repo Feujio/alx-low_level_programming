@@ -18,7 +18,8 @@ void print_times_table(int n)
 	{
 		_putchar('0');
 		_putchar('\n');
-	}
+	} else if (n == 100)
+		_putchar('\0');
 	else
 	{
 		for (i = 0; i <= n; i++)
@@ -40,8 +41,6 @@ void print_times_table(int n)
 						print_digit_by_digit(' ', ' ', (!(x / 10) ? ' ' : (x / 10)), x % 10);
 					else if (x >= 100 && x < 1000)
 						print_digit_by_digit(' ', (x / 100), ((x / 10) % 10), x % 10);
-					else
-						print_digit_by_digit((x / 1000), (x / 100) % 10, (x / 10) % 10, x % 10);
 					if (j == n)
 						continue;
 					_putchar(',');
