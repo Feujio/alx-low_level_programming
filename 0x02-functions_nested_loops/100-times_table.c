@@ -12,14 +12,13 @@ void print_digit_by_digit(int x, int y, int z, int t);
 void print_times_table(int n)
 {
 	int i, j, x;
-		/*, first_digit_x, last_digit_x;*/
 
 	if (n == 0)
 	{
 		_putchar('0');
 		_putchar('\n');
 	} else if (n == 100)
-		_putchar('\0');
+		_putchar(0);
 	else
 	{
 		for (i = 0; i <= n; i++)
