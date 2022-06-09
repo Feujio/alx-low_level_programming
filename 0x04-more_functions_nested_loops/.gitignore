@@ -4,5 +4,5 @@
 _putchar.c
 
 ## Exclude testing files
-[0-9]\-main.c
+[0-9]*\-main.c
 
