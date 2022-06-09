@@ -13,6 +13,7 @@ In this project, I will explore more functions and nested loops.
 * `6-print_line.c`: draws a straight line in the terminal
 * `7-print_diagonal.c`: draws a diagonal line on the terminal
 * `8-print_square.c`: prints a square, followed by a new line
+* `9-fizz_buzz.c`: prints the numbers from 1 to 100, followed by a new line. But for multiples of 3 print `Fizz` instead of the number and for the multiples of 5 print `Buzz`. For numbers which are the multiples of both 3 and 5 print `FizzBuzz`
 
 ## License
 
