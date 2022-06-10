@@ -18,12 +18,13 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		if ((-1 * (n + 1)) == my_int_max)
+		if (n == ((-1 * my_int_max) - 1))
 		{
-			extra += 1;
-			n = n + 1;
+			extra = 1;
+			n = n + 1 * (-1);
 		}
-		n *= -1;
+		else
+			n *= -1;
 		print_digit_by_digit(n, extra);
 	}
 	else if (n < 10)
@@ -40,17 +41,29 @@ void print_number(int n)
  */
 void print_digit_by_digit(int n, int extra)
 {
-	int tens;
+	int aux, res, i, division, numbDigit = 1, tens = 10;
 
-	tens = get_number_digits(n) / 10;
-	do {
-		_putchar(((n / tens) % 10) + '0');
+	while (n - division != 0)
+	{
+		numbDigit += 1;
+		tens *= 10;
+		division = n % tens;
+	}
+	tens /= 10;
+	for (i = numbDigit; i > 0; i--)
+	{
+		res = n / tens;
+		aux = res * tens;
+		n -= aux;
+		if (i == 1 && extra == 1)
+		{
+			res += 1;
+			_putchar(res + '0');
+		}
+		else
+			_putchar(res + '0');
 		tens /= 10;
-	} while (tens != 1);
-	if (extra)
-		_putchar(((n % 10) + 1) + '0');
-	else
-		_putchar((n % 10) + '0');
+	}
 }
 
 /**
@@ -65,21 +78,4 @@ int get_int_max(int bits)
 	for (i = 0; i < bits - 1; i++)
 		res *= 2;
 	return (res - 1 + res);
-}
-
-/**
- * get_number_digits - returns the number of single digit of an integer
- * @n: an integer to process
- * Return: an integer
- */
-int get_number_digits(int n)
-{
-	int division, res = 0, tens = 1;
-
-	do {
-		res += 1;
-		tens *= 10;
-		division = n / tens;
-	} while (division != n);
-	return (tens);
 }
