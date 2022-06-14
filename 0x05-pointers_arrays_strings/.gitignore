@@ -1,0 +1,8 @@
+# Exclude files from project 0x02-functions_nested_loops
+
+## Project requirements files and my personal environment setup
+_putchar.c
+
+## Exclude testing files
+[0-9]*\-main.c
+
