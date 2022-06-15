@@ -13,6 +13,7 @@ In this project, I will explore pointers, arrays and strings.
 * `6-puts2.c`: prints every other charcater of a string, starting with the first character,  followed by a new line
 * `7-puts_half.c`: prints half of a string,  followed by a new line
 * `8-print_array.c`: prints `n` elements of an array of integers, followed by a new line.
+* `9-strcpy.c`: copies the string pointed to by `src`,to the buffer pointed to by `dest`
 
 ## License
 
