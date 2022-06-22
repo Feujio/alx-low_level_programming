@@ -1,0 +1,11 @@
+# Exclude files from project 0x02-functions_nested_loops
+
+## all emacs files
+*~
+
+## Project requirements files and my personal environment setup
+_putchar.c
+
+## Testing files
+[0-9]*\-main.c
+
