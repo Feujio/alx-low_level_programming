@@ -15,11 +15,10 @@ int _sqrt_recursion(int n)
 	return (main_sqrt_recursion(n, 0));
 }
 
-/*
- * main_sqrt_recursion - does the actual processing
+/**
+ * main_sqrt_recursion - compute the result actually
  * @n: number to calculate the sqaure root of
  * @i: counter
- * Description: Does the actual processing.
  * Return: an integer
  */
 int main_sqrt_recursion(int n, int i)
